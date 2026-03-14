@@ -8,9 +8,13 @@ body{
 background:red;
 color:white;
 text-align:center;
-font-size:40px;
-margin-top:200px;
 font-family:Arial;
+}
+
+img{
+width:300px;
+margin-top:20px;
+border-radius:10px;
 }
 </style>
 
@@ -18,8 +22,10 @@ font-family:Arial;
 
 <body onclick="startPrank()">
 
-⚠️ SECURITY ALERT ⚠️ <br>
-Your Phone Has Been Hacked!
+<h1>⚠ SECURITY ALERT ⚠</h1>
+<h2>Your Phone Has Been Hacked!</h2>
+
+<img src="photo.jpg">
 
 <audio id="sound">
 <source src="ringtone.mp3.mp3" type="audio/mpeg">
@@ -28,7 +34,7 @@ Your Phone Has Been Hacked!
 <script>
 function startPrank(){
 document.getElementById("sound").play();
-navigator.vibrate([500,300,500,300,500]);
+navigator.vibrate([500,300,500,300]);
 }
 </script>
 
